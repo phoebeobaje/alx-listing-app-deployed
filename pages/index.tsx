@@ -9,12 +9,21 @@ const HomePage: React.FC = () => {
     return (
         <>
             {/* Hero Section */}
-            <section className="h-[80vh] bg-cover bg-center flex flex-col  justify-center items-center text-white"
-            style={{ backgroundImage: `url(${HERO_BG})` }}
->
-<h1 className="text-4xl font-bold md:text-5xl mb-8"> Find your favorite place here!</h1>
-<p>The best prices for over 2 million properties worldwide.</p>
-    </section>
+            <section
+                className="relative w-auto h-[90vh] bg-cover bg-center flex items-center justify-center text-white rounded-[18px]"
+                style={{
+                    backgroundImage: `url(${HERO_BG.src})`,
+                }}
+            >
+                <div className="text-center bg-opacity-40 p-6 rounded-xl">
+                    <h1 className="text-[94px] md:text-5xl font-bold mb-4">
+                        Find your favorite <br /> place here!
+                    </h1>
+                    <p className="text-[24px] md:text-xl">
+                        The best prices for over 2 million properties worldwide.
+                    </p>
+                </div>
+            </section>
             
 
             {/* Filter Section */}
